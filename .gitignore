@@ -24,9 +24,7 @@
 # Vim
 
 !.config/nvim/
-!.config/nvim/*
 !.config/nvim/vscode-init.vim
-.config/nvim/*
 
 #-------------------------------------------------------------------------------
 # i3 + Polybar
