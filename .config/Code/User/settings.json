@@ -1,0 +1,164 @@
+{
+    // *************************************************************************
+    // 1. General Stuff
+    "window.menuBarVisibility": "hidden",
+    "workbench.colorTheme": "One Dark Pro",
+    "workbench.preferredDarkColorTheme": "One Dark Pro",
+    "workbench.colorCustomizations": {
+        "[One Dark Pro]": {
+            "editor.background": "#282A36",
+            "tab.activeBorderTop": "#0A84FF",
+        }
+    },
+    "workbench.iconTheme": "material-icon-theme",
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 13,
+    "editor.tabCompletion": "on",
+    "editor.acceptSuggestionOnEnter": "off",
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.editor.enablePreview": false,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "terminal.integrated.fontSize": 14.5,
+    "window.restoreWindows": "none",
+    "workbench.activityBar.visible": false,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "editor.minimap.maxColumn": 60,
+    "files.eol": "\n",
+    "window.openFilesInNewWindow": "on",
+    "workbench.settings.editor": "json",
+    "workbench.settings.useSplitJSON": false,
+    "explorer.autoReveal": false,
+    "editor.suggestSelection": "first",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "workbench.layoutControl.enabled": false,
+    "extensions.ignoreRecommendations": false,
+    "search.smartCase": true,
+    "editor.minimap.enabled": false,
+    "workbench.editor.pinnedTabSizing": "compact",
+    "breadcrumbs.enabled": false,
+    "python.defaultInterpreterPath": "C:\\Program Files\\Python38\\python.exe",
+    "window.zoomLevel": 0.3,
+    "security.workspace.trust.banner": "always",
+    "window.commandCenter": false,
+    "editor.inlineSuggest.enabled": true,
+    "redhat.telemetry.enabled": false,
+    "editor.wordWrap": "on",
+    // *************************************************************************
+    // 2. Languages
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[typescript]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+    },
+    "typescript.preferences.importModuleSpecifier": "relative",
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[dart]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnType": true,
+        "editor.rulers": [
+            80
+        ],
+        "editor.selectionHighlight": false,
+        "editor.suggest.snippetsPreventQuickSuggestions": false,
+        "editor.suggestSelection": "first",
+        "editor.tabCompletion": "onlySnippets",
+        "editor.wordBasedSuggestions": false
+    },
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[css]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[yaml]": {
+        "editor.tabSize": 2,
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[sass]": {
+        "editor.defaultFormatter": "syler.sass-indented"
+    },
+    "[latex]": {
+        "editor.defaultFormatter": "nickfode.latex-formatter"
+    },
+    // *************************************************************************
+    // 3. Git Lens
+    "gitlens.menus": false,
+    // *************************************************************************
+    // 4. Live Sass
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+    ],
+    // *************************************************************************
+    // 5. Live Server
+    "liveServer.settings.donotShowInfoMsg": true,
+    // *************************************************************************
+    // 6. Neovim
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
+    "vscode-neovim.neovimInitVimPaths.darwin": "/home/phili/.config/nvim/vscode-init.vim",
+    "keyboard.dispatch": "keyCode",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\phili\\.config\\nvim",
+    // *************************************************************************
+    // 7. Github Copilot
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false
+    },
+    "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
+    "latex-workshop.latex.tools": [
+        {
+            "name": "lualatexmk",
+            "command": "latexmk",
+            "args": [
+                "-lualatex",
+            ]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk (lualatex)",
+            "tools": [
+                "lualatexmk"
+            ]
+        }
+    ],
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/phili/.config/nvim/vscode-init.vim"
+}

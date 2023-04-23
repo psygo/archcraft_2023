@@ -27,6 +27,14 @@
 !.config/nvim/vscode-init.vim
 
 #-------------------------------------------------------------------------------
+# VS Code
+
+!.config/Code/
+!.config/Code/User/
+!.config/Code/User/settings.json
+!.config/Code/User/keybindings.json
+
+#-------------------------------------------------------------------------------
 # i3 + Polybar
 
 !.config/i3/
