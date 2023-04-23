@@ -160,5 +160,6 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "vscode-neovim.neovimInitVimPaths.linux": "/home/phili/.config/nvim/vscode-init.vim"
+    "vscode-neovim.neovimInitVimPaths.linux": "/home/phili/.config/nvim/vscode-init.vim",
+    "git.openRepositoryInParentFolders": "never"
 }

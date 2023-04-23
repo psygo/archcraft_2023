@@ -13,4 +13,6 @@ noremap P gP
 vmap y y']
 
 "Delete line but don't yank it
-noremap nn "_dd
+noremap <leader>dd "_dd
+"Not working...
+noremap <leader-d-i-w> "_diw
