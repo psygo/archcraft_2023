@@ -1,5 +1,9 @@
 set clipboard=unnamedplus
 
+"Mapping Space to Leader
+nnoremap <SPACE> <Nop>
+let mapleader=" "
+
 "Wrapped Lines
 set wrap
 nmap j gj
@@ -13,6 +17,4 @@ noremap P gP
 vmap y y']
 
 "Delete line but don't yank it
-noremap <leader>dd "_dd
-"Not working...
-noremap <leader-d-i-w> "_diw
+nnoremap <leader>d "_d
