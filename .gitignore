@@ -3,7 +3,6 @@
 #-------------------------------------------------------------------------------
 # Git
 
-!.gitattributes
 !.gitignore
 !.gitconfig
 
@@ -12,9 +11,11 @@
 
 !.config/
 
-.xsession
-.Xmodmap
-.imwheelrc
+!.xsession
+!.Xmodmap
+!.imwheelrc
+
+!README.md
 
 #-------------------------------------------------------------------------------
 # Vim
