@@ -5,7 +5,8 @@ nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 "Wrapped Lines
-set wrap
+"set wrap
+set relativenumber
 nmap j gj
 nmap k gk
 

@@ -1,6 +1,9 @@
 {
     // *************************************************************************
     // 1. General Stuff
+    "editor.lineNumbers": "relative",
+    "editor.wordWrap": "off",
+    "git.openRepositoryInParentFolders": "never",
     "window.menuBarVisibility": "hidden",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
@@ -49,7 +52,6 @@
     "window.commandCenter": false,
     "editor.inlineSuggest.enabled": true,
     "redhat.telemetry.enabled": false,
-    "editor.wordWrap": "on",
     // *************************************************************************
     // 2. Languages
     "[javascript]": {
@@ -105,39 +107,11 @@
     "[sass]": {
         "editor.defaultFormatter": "syler.sass-indented"
     },
+    "[markdown]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[latex]": {
         "editor.defaultFormatter": "nickfode.latex-formatter"
-    },
-    // *************************************************************************
-    // 3. Git Lens
-    "gitlens.menus": false,
-    // *************************************************************************
-    // 4. Live Sass
-    "liveSassCompile.settings.generateMap": false,
-    "liveSassCompile.settings.formats": [
-        {
-            "format": "compressed",
-            "extensionName": ".css",
-            "savePath": null,
-            "savePathReplacementPairs": null
-        }
-    ],
-    // *************************************************************************
-    // 5. Live Server
-    "liveServer.settings.donotShowInfoMsg": true,
-    // *************************************************************************
-    // 6. Neovim
-    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
-    "vscode-neovim.neovimInitVimPaths.darwin": "/home/phili/.config/nvim/vscode-init.vim",
-    "keyboard.dispatch": "keyCode",
-    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\phili\\.config\\nvim",
-    // *************************************************************************
-    // 7. Github Copilot
-    "github.copilot.enable": {
-        "*": true,
-        "yaml": false,
-        "plaintext": true,
-        "markdown": false
     },
     "latex-workshop.latex.recipe.default": "latexmk (lualatex)",
     "latex-workshop.latex.tools": [
@@ -157,9 +131,36 @@
             ]
         }
     ],
-    "[markdown]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
+    // *************************************************************************
+    // 3. Git Lens
+    "gitlens.menus": false,
+    // *************************************************************************
+    // 4. Live Sass
+    "liveSassCompile.settings.generateMap": false,
+    "liveSassCompile.settings.formats": [
+        {
+            "format": "compressed",
+            "extensionName": ".css",
+            "savePath": null,
+            "savePathReplacementPairs": null
+        }
+    ],
+    // *************************************************************************
+    // 5. Live Server
+    "liveServer.settings.donotShowInfoMsg": true,
+    // *************************************************************************
+    // 6. Neovim
+    "keyboard.dispatch": "keyCode",
+    "vscode-neovim.neovimExecutablePaths.linux": "/usr/bin/nvim",
     "vscode-neovim.neovimInitVimPaths.linux": "/home/phili/.config/nvim/vscode-init.vim",
-    "git.openRepositoryInParentFolders": "never"
+    "vscode-neovim.neovimInitVimPaths.darwin": "/home/phili/.config/nvim/vscode-init.vim",
+    "vscode-neovim.neovimInitVimPaths.win32": "C:\\Users\\phili\\.config\\nvim",
+    // *************************************************************************
+    // 7. Github Copilot
+    "github.copilot.enable": {
+        "*": true,
+        "yaml": false,
+        "plaintext": true,
+        "markdown": false
+    }
 }
