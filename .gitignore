@@ -14,6 +14,7 @@
 !.xsession
 !.Xmodmap
 !.imwheelrc
+!.zshrc
 
 !scripts/
 !scripts/*
