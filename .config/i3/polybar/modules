@@ -231,6 +231,8 @@ ws-icon-6 = 7;7  YT Kbd Nav
 ws-icon-7 = 8;8 漣 Rust
 ws-icon-8 = 9;9 LaTeX
 ws-icon-9 = 10;10 ﳴ
+ws-icon-10 = 11;11
+ws-icon-11 = 12;12
 ws-icon-default = 
 ; NOTE: You cannot skip icons, e.g. to get a ws-icon-6
 ; you must also define a ws-icon-5.
