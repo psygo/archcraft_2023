@@ -21,4 +21,5 @@ vmap y y']
 nnoremap <leader>d "_d
 
 "Shortcuts for Editing
+nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 nnoremap <leader>pv :Vex<CR>
