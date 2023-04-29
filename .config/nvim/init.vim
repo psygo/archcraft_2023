@@ -3,8 +3,8 @@
 
 call plug#begin()
 
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } } |
+            \ Plug 'junegunn/fzf.vim'
 
 " Editing Utils
 Plug 'tpope/vim-surround'
@@ -12,7 +12,9 @@ Plug 'tpope/vim-surround'
 " IDE Stuff
 Plug 'tpope/vim-vinegar'  " better netrw
 Plug 'tpope/vim-repeat'   " `.` now repeats plugin commands as well
-Plug 'preservim/nerdtree'
+Plug 'preservim/nerdtree' |
+            \ Plug 'Xuyuanp/nerdtree-git-plugin' |
+            \ Plug 'ryanoasis/vim-devicons' 
 
 " Git
 Plug 'tpope/vim-fugitive' " git goodness
@@ -21,6 +23,7 @@ Plug 'junegunn/gv.vim'    " git browser
 call plug#end()
 "------------------------------------------------------------------------------
 set clipboard=unnamedplus
+set encoding=UTF-8
 
 " Mapping Space to Leader
 nnoremap <SPACE> <Nop>
@@ -58,3 +61,4 @@ nnoremap <C-u> <C-u>zz
 " FZF
 nnoremap <C-o> :GFiles<CR>
 nnoremap <C-f> :Rg<CR>
+"------------------------------------------------------------------------------
