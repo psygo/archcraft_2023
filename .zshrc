@@ -1,7 +1,8 @@
 #-----------------------------------------------
 # My Configs
 
-alias vimrc="vim ~/.config/nvim/vscode-init.vim"
+alias vs-vimrc="vim ~/.config/nvim/vscode-init.vim"
+alias vimrc="vim ~/.config/nvim/init.vim"
 #-----------------------------------------------
 
 # If you come from bash you might have to change your $PATH.
