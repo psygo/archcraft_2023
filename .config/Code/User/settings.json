@@ -162,5 +162,6 @@
         "yaml": false,
         "plaintext": true,
         "markdown": false
-    }
+    },
+    "githubPullRequests.pullBranch": "never"
 }
