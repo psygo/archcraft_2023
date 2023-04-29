@@ -20,6 +20,9 @@ Plug 'preservim/nerdtree' |
 Plug 'tpope/vim-fugitive' " git goodness
 Plug 'junegunn/gv.vim'    " git browser
 
+"CoC
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end()
 "------------------------------------------------------------------------------
 set clipboard=unnamedplus
@@ -61,4 +64,12 @@ nnoremap <C-u> <C-u>zz
 " FZF
 nnoremap <C-o> :GFiles<CR>
 nnoremap <C-f> :Rg<CR>
+"------------------------------------------------------------------------------
+"CoC
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 "------------------------------------------------------------------------------
