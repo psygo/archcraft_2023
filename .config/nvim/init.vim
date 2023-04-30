@@ -87,8 +87,11 @@ nnoremap <C-u> <C-u>zz
 " FZF
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-f> :Rg<CR>
+
 "------------------------------------------------------------------------------
 " CoC
+
+source ~/.config/nvim/coc-utils.vim
 
 " Some servers have issues with backup files, see #649
 set nobackup
@@ -118,11 +121,6 @@ inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
 " Use <c-space> to trigger completion
 if has('nvim')
   inoremap <silent><expr> <c-space> coc#refresh()
@@ -143,14 +141,6 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
 nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
 
 " Highlight the symbol and its references when holding the cursor
 autocmd CursorHold * silent call CocActionAsync('highlight')
@@ -247,4 +237,11 @@ nnoremap <silent><nowait> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent><nowait> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
+
+" Coc Prettier
+command! -nargs=0 Prettier :CocCommand prettier.forceFormatDocument
+
+nmap <A-S-f> <cmd>Prettier<CR>
+"------------------------------------------------------------------------------
+" More Remappings
 "------------------------------------------------------------------------------

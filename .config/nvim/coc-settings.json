@@ -1,3 +1,4 @@
 {
-  "suggest.noselect": false
+  "suggest.enablePreselect": false,
+  "suggest.noselect": true
 }
