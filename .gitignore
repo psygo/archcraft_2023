@@ -29,8 +29,9 @@
 
 !.config/nvim/
 !.config/nvim/init.vim
-!.config/nvim/vscode-init.vim
+!.config/nvim/coc-utils.json
 !.config/nvim/coc-settings.json
+!.config/nvim/vscode-init.vim
 
 #-------------------------------------------------------------------------------
 # VS Code
