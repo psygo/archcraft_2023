@@ -19,6 +19,14 @@ Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons' 
 
+" Theming and UI
+Plug 'joshdick/onedark.vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'lilydjwg/colorizer'
+Plug 'airblade/vim-gitgutter'
+
 " Git
 Plug 'tpope/vim-fugitive' " git goodness
 Plug 'junegunn/gv.vim'    " git browser
@@ -30,6 +38,20 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
 call plug#end()
+
+"------------------------------------------------------------------------------
+" Theming Setup
+
+let g:onedark_color_overrides = {
+\ "black": {"gui": "#21222c", "cterm": "235", "cterm16": "0" },
+\ "purple": { "gui": "#C678DF", "cterm": "170", "cterm16": "5" }
+\}
+colorscheme onedark
+let g:airline_theme = 'onedark'
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#buffer_nr_show = 1
+let g:airline_powerline_fonts = 1
+
 "------------------------------------------------------------------------------
 " General Configs
 
@@ -92,9 +114,11 @@ nnoremap <C-u> <C-u>zz
 " FZF
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-f> :Rg<CR>
+
 "------------------------------------------------------------------------------
 " LSP
 
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
 "------------------------------------------------------------------------------
