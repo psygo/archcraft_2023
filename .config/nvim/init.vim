@@ -18,6 +18,17 @@ Plug 'tpope/vim-sensible' " sensible setup
 Plug 'preservim/nerdtree' |
             \ Plug 'Xuyuanp/nerdtree-git-plugin' |
             \ Plug 'ryanoasis/vim-devicons' 
+Plug 'rbgrouleff/bclose.vim' |
+            \ Plug 'francoiscabrol/ranger.vim'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install --frozen-lockfile --production',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'svelte', 'yaml', 'html'] }
+Plug 'easymotion/vim-easymotion'
+Plug 'mattn/emmet-vim'
+Plug 'jiangmiao/auto-pairs'
+Plug 'matze/vim-move'
+Plug 'machakann/vim-highlightedyank'
+Plug 'Yggdroot/indentLine'
 
 " Theming and UI
 Plug 'joshdick/onedark.vim'
@@ -41,16 +52,28 @@ call plug#end()
 
 "------------------------------------------------------------------------------
 " Theming Setup
+"
+set guifont=Fira\ Code\ 14 " Not working?
 
+" One Dark
+set termguicolors
 let g:onedark_color_overrides = {
 \ "black": {"gui": "#21222c", "cterm": "235", "cterm16": "0" },
 \ "purple": { "gui": "#C678DF", "cterm": "170", "cterm16": "5" }
 \}
 colorscheme onedark
+
+" Airline
 let g:airline_theme = 'onedark'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline_powerline_fonts = 1
+
+" machakann/vim-highlightedyank
+let g:highlightedyank_highlight_duration = 500
+
+" Yggdroot/indentLine
+let g:indentLine_char_list = ['|', '┊', '┆', '¦']
 
 "------------------------------------------------------------------------------
 " General Configs
@@ -78,6 +101,8 @@ set scrolloff=5
 set list
 set ruler
 set colorcolumn=80
+set signcolumn=yes
+set updatetime=300
 
 " Mapping Space to Leader
 nnoremap <SPACE> <Nop>
@@ -120,5 +145,7 @@ nnoremap <C-f> :Rg<CR>
 
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+set pumheight=10
 
 "------------------------------------------------------------------------------

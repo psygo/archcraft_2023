@@ -163,5 +163,6 @@
         "plaintext": true,
         "markdown": false
     },
-    "githubPullRequests.pullBranch": "never"
+    "githubPullRequests.pullBranch": "never",
+    "haskell.manageHLS": "PATH"
 }
