@@ -139,13 +139,18 @@ nnoremap <C-u> <C-u>zz
 " FZF
 nnoremap <C-p> :GFiles<CR>
 nnoremap <C-f> :Rg<CR>
+nnoremap <C-e> :Ranger<CR>
+
+" Formatting
+nnoremap <A-S-f> :Prettier<CR>
 
 "------------------------------------------------------------------------------
 " LSP
 
 set pumheight=10
 
-nnoremap <A-S-f> :Prettier<CR>
+" Tab selects next suggestion if suggestions are visible
+inoremap <expr> <TAB> pumvisible() ? "<C-n>" : "<TAB>"
 
 nnoremap <C-k><C-h> :LspHover<CR>
 nnoremap <C-k><C-d> :LspDefinition<CR>
