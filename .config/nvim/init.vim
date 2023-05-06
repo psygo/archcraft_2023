@@ -43,6 +43,7 @@ Plug 'tpope/vim-fugitive' " git goodness
 Plug 'junegunn/gv.vim'    " git browser
 
 "LSP
+Plug 'neovim/nvim-lspconfig'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'

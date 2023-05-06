@@ -5,6 +5,8 @@ alias vs-vimrc="vim ~/.config/nvim/vscode-init.vim"
 alias vimrc="vim ~/.config/nvim/init.vim"
 
 export PATH=$HOME/.config/emacs/bin:$PATH
+
+export FZF_DEFAULT_OPTS='--cycle'
 #-----------------------------------------------
 
 # If you come from bash you might have to change your $PATH.
