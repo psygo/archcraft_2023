@@ -102,7 +102,7 @@ set list
 set ruler
 set colorcolumn=80
 set signcolumn=yes
-set updatetime=300
+set updatetime=100
 
 " Mapping Space to Leader
 nnoremap <SPACE> <Nop>
@@ -143,9 +143,13 @@ nnoremap <C-f> :Rg<CR>
 "------------------------------------------------------------------------------
 " LSP
 
-inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-
 set pumheight=10
+
+nnoremap <A-S-f> :Prettier<CR>
+
+nnoremap <C-k><C-h> :LspHover<CR>
+nnoremap <C-k><C-d> :LspDefinition<CR>
+nnoremap <C-k><C-e> :LspNextError<CR>
+nnoremap <C-k><C-r> :LspRename<CR>
 
 "------------------------------------------------------------------------------
