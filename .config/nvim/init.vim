@@ -42,12 +42,13 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive' " git goodness
 Plug 'junegunn/gv.vim'    " git browser
 
-"LSP
+"LSP & Autocomplete
 Plug 'neovim/nvim-lspconfig'
 Plug 'prabirshrestha/vim-lsp'
 Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'ycm-core/YouCompleteMe'
 
 call plug#end()
 
@@ -148,7 +149,7 @@ nnoremap <A-S-f> :Prettier<CR>
 "------------------------------------------------------------------------------
 " LSP
 
-set pumheight=10
+set pumheight=20
 
 " Tab selects next suggestion if suggestions are visible
 inoremap <expr> <TAB> pumvisible() ? "<C-n>" : "<TAB>"
