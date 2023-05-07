@@ -128,9 +128,6 @@ nnoremap <leader>d "_d
 " Source Vim Config
 nnoremap <leader><CR> :so ~/.config/nvim/init.vim<CR>
 
-" Vertical Explorer
-nnoremap <leader>pv :Vex<CR>
-
 " Save all files
 nnoremap <C-s> :wa<CR>
 
@@ -149,6 +146,7 @@ nnoremap <A-S-f> :Prettier<CR>
 "------------------------------------------------------------------------------
 " LSP
 
+" Height of the popup box of suggestions
 set pumheight=20
 
 " Tab selects next suggestion if suggestions are visible
@@ -158,5 +156,33 @@ nnoremap <C-k><C-h> :LspHover<CR>
 nnoremap <C-k><C-d> :LspDefinition<CR>
 nnoremap <C-k><C-e> :LspNextError<CR>
 nnoremap <C-k><C-r> :LspRename<CR>
+
+"------------------------------------------------------------------------------
+" LaTeX
+
+" From: https://dev.to/l04db4l4nc3r/vim-to-the-rescue-pdf-preview-2e10
+" This won't work because the paths won't match always.
+
+function! Compile()
+        let extension = expand('%:e')
+        if extension == "ms"
+                execute "! groff -ms % -T pdf > /tmp/op.pdf"
+        elseif extension == "tex"
+                execute "! pdflatex main.tex"
+        elseif extension == "md"
+                execute "! pandoc % -s -o /tmp/op.pdf"
+        endif
+endfunction
+
+function! Preview()
+        :call Compile()<CR><CR>
+        execute "! zathura main.pdf &"
+endfunction
+
+" map \ + p to preview
+noremap <leader>p :call Preview()<CR><CR><CR>
+
+" map \ + q to compile
+noremap <leader>q :call Compile()<CR><CR>
 
 "------------------------------------------------------------------------------
