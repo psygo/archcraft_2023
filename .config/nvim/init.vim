@@ -83,7 +83,6 @@ let g:indentLine_char_list = ['|', '┊', '┆', '¦']
 filetype on
 set encoding=UTF-8
 set clipboard=unnamedplus
-set splitbelow splitright
 set wildmenu
 set hidden
 
@@ -142,6 +141,18 @@ nnoremap <C-e> :Ranger<CR>
 
 " Formatting
 nnoremap <A-S-f> :Prettier<CR>
+
+" Going through editors
+nmap <C-k> <C-w>k " Above
+nmap <C-j> <C-w>j " Below
+nmap <C-h> <C-w>h " Left
+nmap <C-l> <C-w>l " Right
+
+" Creating Splits
+nmap <A-S-k> :aboveleft split<CR>  " Above
+nmap <A-S-j> :split<CR>            " Below
+nmap <A-S-h> :vsplit<CR>           " Left
+nmap <A-S-l> :aboveleft vsplit<CR> " Right
 
 "------------------------------------------------------------------------------
 " LSP
