@@ -49,6 +49,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'uiiaoo/java-syntax.vim'
 
 call plug#end()
 
