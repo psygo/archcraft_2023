@@ -54,8 +54,6 @@ call plug#end()
 
 "------------------------------------------------------------------------------
 " Theming Setup
-"
-set guifont=Fira\ Code\ 14 " Not working?
 
 " One Dark
 set termguicolors
