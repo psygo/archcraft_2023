@@ -47,6 +47,12 @@
 !.config/Code/User/keybindings.json
 
 #-------------------------------------------------------------------------------
+# qutebrowser
+
+!.config/qutebrowser/
+!.config/qutebrowser/config.py
+
+#-------------------------------------------------------------------------------
 # i3 + Polybar
 
 !.config/i3/
