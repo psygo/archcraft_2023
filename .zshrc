@@ -8,7 +8,7 @@ export PATH=$HOME/.config/emacs/bin:$PATH
 
 export FZF_DEFAULT_OPTS='--cycle'
 
-export BROWSER="google-chrome"
+export BROWSER="google-chrome-stable"
 #-----------------------------------------------
 
 # If you come from bash you might have to change your $PATH.
