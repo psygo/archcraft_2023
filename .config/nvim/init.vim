@@ -30,6 +30,7 @@ Plug 'matze/vim-move'
 Plug 'machakann/vim-highlightedyank'
 Plug 'Yggdroot/indentLine'
 Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+Plug 'kshenoy/vim-signature'
 
 " Theming and UI
 Plug 'joshdick/onedark.vim'
