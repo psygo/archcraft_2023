@@ -155,6 +155,9 @@ nmap <A-S-j> :split<CR>            " Below
 nmap <A-S-h> :vsplit<CR>           " Left
 nmap <A-S-l> :aboveleft vsplit<CR> " Right
 
+" NERDTree
+nmap <leader>n :NERDTree<CR>
+
 "------------------------------------------------------------------------------
 " LSP
 
