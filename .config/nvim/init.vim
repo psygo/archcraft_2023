@@ -102,7 +102,7 @@ set number
 set scrolloff=5
 set list
 set ruler
-set colorcolumn=80
+set colorcolumn=81
 set signcolumn=yes
 set updatetime=100
 
