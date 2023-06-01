@@ -1,0 +1,9 @@
+let blacklists = ["https://www.online-go.com"]
+
+site '*://*.youtube.com/*' {
+      unmap s
+      unmap d
+}
+
+map <C-h> previousTab
+map <C-l> nextTab
