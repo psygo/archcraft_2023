@@ -1,6 +1,7 @@
 #-----------------------------------------------
 # My Configs
 
+alias ls="exa" # not working?
 alias vs-vimrc="vim ~/.config/nvim/vscode-init.vim"
 alias vimrc="vim ~/.config/nvim/init.vim"
 

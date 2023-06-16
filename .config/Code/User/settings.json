@@ -1,10 +1,10 @@
 {
     // *************************************************************************
     // 1. General Stuff
+    "window.menuBarVisibility": "hidden",
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
     "git.openRepositoryInParentFolders": "never",
-    "window.menuBarVisibility": "hidden",
     "workbench.colorTheme": "One Dark Pro",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
@@ -27,6 +27,7 @@
     "window.restoreWindows": "none",
     "workbench.activityBar.visible": false,
     "editor.rulers": [
+        60,
         80,
         100
     ],
@@ -164,5 +165,8 @@
         "markdown": false
     },
     "githubPullRequests.pullBranch": "never",
-    "haskell.manageHLS": "PATH"
+    "haskell.manageHLS": "PATH",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }
