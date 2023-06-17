@@ -2,6 +2,7 @@
     // *************************************************************************
     // 1. General Stuff
     "window.menuBarVisibility": "hidden",
+    "http.proxySupport": "off",
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
     "git.openRepositoryInParentFolders": "never",
