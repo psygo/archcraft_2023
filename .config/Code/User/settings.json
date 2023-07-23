@@ -169,5 +169,8 @@
     "haskell.manageHLS": "PATH",
     "[javascriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.pgsql": "postgres"
     }
 }
