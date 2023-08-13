@@ -167,3 +167,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+# Created by `pipx` on 2023-08-05 22:25:10
+export PATH="$PATH:/home/phili/.local/bin"

@@ -49,7 +49,6 @@
     "workbench.editor.pinnedTabSizing": "compact",
     "breadcrumbs.enabled": false,
     "python.defaultInterpreterPath": "C:\\Program Files\\Python38\\python.exe",
-    "window.zoomLevel": 0.3,
     "security.workspace.trust.banner": "always",
     "window.commandCenter": false,
     "editor.inlineSuggest.enabled": true,
@@ -173,4 +172,5 @@
     "files.associations": {
         "*.pgsql": "postgres"
     }
+    // *************************************************************************
 }

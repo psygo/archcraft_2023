@@ -6,9 +6,6 @@ let mapleader=" "
 
 "Wrapped Lines
 "set wrap
-set relativenumber
-nmap j gj
-nmap k gk
 
 "When pasting, go to the end of the pasted block
 noremap p gp
