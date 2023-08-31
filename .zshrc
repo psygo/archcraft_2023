@@ -169,3 +169,10 @@ esac
 # pnpm end
 # Created by `pipx` on 2023-08-05 22:25:10
 export PATH="$PATH:/home/phili/.local/bin"
+
+# bun completions
+[ -s "/home/phili/.bun/_bun" ] && source "/home/phili/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

@@ -1,6 +1,7 @@
 {
     // *************************************************************************
     // 1. General Stuff
+    "window.zoomLevel": -0.25,
     "window.menuBarVisibility": "hidden",
     "http.proxySupport": "off",
     "editor.lineNumbers": "relative",
@@ -53,6 +54,7 @@
     "window.commandCenter": false,
     "editor.inlineSuggest.enabled": true,
     "redhat.telemetry.enabled": false,
+    "githubPullRequests.pullBranch": "never",
     // *************************************************************************
     // 2. Languages
     "[javascript]": {
@@ -60,6 +62,9 @@
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
     "[typescript]": {
         "editor.tabSize": 2,
         "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -68,6 +73,9 @@
     "typescript.updateImportsOnFileMove.enabled": "always",
     "[typescriptreact]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+        "*.pgsql": "postgres"
     },
     "[dart]": {
         "editor.formatOnSave": true,
@@ -132,6 +140,7 @@
             ]
         }
     ],
+    "haskell.manageHLS": "PATH",
     // *************************************************************************
     // 3. Git Lens
     "gitlens.menus": false,
@@ -164,13 +173,5 @@
         "plaintext": true,
         "markdown": false
     },
-    "githubPullRequests.pullBranch": "never",
-    "haskell.manageHLS": "PATH",
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "files.associations": {
-        "*.pgsql": "postgres"
-    }
     // *************************************************************************
 }
