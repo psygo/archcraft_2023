@@ -1,7 +1,7 @@
 {
     // *************************************************************************
     // 1. General Stuff
-    "window.zoomLevel": -0.25,
+    "window.zoomLevel": -0.15,
     "window.menuBarVisibility": "hidden",
     "http.proxySupport": "off",
     "editor.lineNumbers": "relative",
