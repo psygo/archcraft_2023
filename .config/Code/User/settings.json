@@ -27,7 +27,6 @@
     "editor.multiCursorModifier": "ctrlCmd",
     "terminal.integrated.fontSize": 14.5,
     "window.restoreWindows": "none",
-    "workbench.activityBar.visible": false,
     "editor.rulers": [
         60,
         80,
@@ -172,6 +171,10 @@
         "yaml": false,
         "plaintext": true,
         "markdown": false
+    },
+    "workbench.activityBar.location": "hidden",
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
     },
     // *************************************************************************
 }
