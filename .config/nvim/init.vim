@@ -171,4 +171,36 @@ nnoremap <C-k><C-h> :LspHover<CR>
 nnoremap <C-k><C-d> :LspDefinition<CR>
 nnoremap <C-k><C-e> :LspNextError<CR>
 nnoremap <C-k><C-r> :LspRename<CR>
+
 "------------------------------------------------------------------------------
+" Korean Keyboard
+
+nmap ㅁ a
+nmap ㅠ b
+nmap ㅊ c
+nmap ㅇ d
+nmap ㄷ e
+nmap ㄹ f
+nmap ㅎ g
+nmap ㅗ h
+nmap ㅑ i
+nmap ㅓ j
+nmap ㅏ k
+nmap ㅣ l
+nmap ㅡ m
+nmap ㅜ n
+nmap ㅐ o
+nmap ㅔ p
+nmap ㅂ q
+nmap ㄱ r
+nmap ㄴ s
+nmap ㅅ t
+nmap ㅕ u
+nmap ㅍ v
+nmap ㅌ x
+nmap ㅈ w
+nmap ㅛ y
+nmap ㅋ z
+
+"-------------------------------------------------------------------------------
+
