@@ -2,12 +2,11 @@
     // *************************************************************************
     // 1. General Stuff
     "window.zoomLevel": -0.15,
-    "window.menuBarVisibility": "hidden",
     "http.proxySupport": "off",
     "editor.lineNumbers": "relative",
     "editor.wordWrap": "off",
     "git.openRepositoryInParentFolders": "never",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "One Dark Pro Darker",
     "workbench.preferredDarkColorTheme": "One Dark Pro",
     "workbench.colorCustomizations": {
         "[One Dark Pro]": {
@@ -176,5 +175,6 @@
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1
     },
+    "window.menuBarVisibility": "toggle",
     // *************************************************************************
 }
