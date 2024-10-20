@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=/home/phili/.local/bin/katrain
+Type=Application
+Categories=Go
+Name=KaTrain

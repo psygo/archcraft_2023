@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=bash "/home/phili/.local/share/applications/run_foxwq.sh"
+Type=Application
+Categories=Go
+Name=Fox Weiqi

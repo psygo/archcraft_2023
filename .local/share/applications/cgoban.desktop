@@ -1,0 +1,5 @@
+[Desktop Entry]
+Exec=java -jar "/home/phili/Other Software/KGS/cgoban.jar"
+Type=Application
+Categories=Go
+Name=CGoban

@@ -81,3 +81,14 @@ Notes/.git
 !.cvimrc
 
 #-------------------------------------------------------------------------------
+# Rofi
+
+!.local/
+!.local/share/
+!.local/share/applications/
+!.local/share/applications/katrain.desktop
+!.local/share/applications/cgoban.desktop
+!.local/share/applications/fox_weiqi.desktop
+!.local/share/applications/run_foxwq.sh
+
+#-------------------------------------------------------------------------------
